@@ -1,0 +1,55 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c2185b"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#c2185b"><b>Data Hiding</b></text>
+  
+  <!-- External world -->
+  <rect x="20" y="70" width="200" height="250" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="120" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#c2185b"><b>External Code</b></text>
+  
+  <rect x="40" y="110" width="160" height="35" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="120" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">wallet.set_pin("1234")</text>
+  
+  <rect x="40" y="155" width="160" height="35" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">wallet.deposit(500, "1234")</text>
+  
+  <rect x="40" y="200" width="160" height="35" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="120" y="225" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">wallet.withdraw(200, "1234")</text>
+  
+  <rect x="40" y="245" width="160" height="35" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="120" y="270" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">wallet.get_balance("1234")</text>
+  
+  <rect x="40" y="290" width="160" height="35" fill="#ffcdd2" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="120" y="315" text-anchor="middle" font-family="Arial" font-size="10" fill="#c2185b">❌ wallet.__balance</text>
+  <text x="120" y="330" text-anchor="middle" font-family="Arial" font-size="10" fill="#c2185b">❌ wallet.__pin_hash</text>
+  
+  <!-- Barrier -->
+  <line x1="220" y1="100" x2="330" y2="100" stroke="#c2185b" stroke-width="4" stroke-dasharray="10,5"/>
+  <text x="275" y="90" text-anchor="middle" font-family="Arial" font-size="12" fill="#c2185b"><b>PUBLIC INTERFACE ONLY</b></text>
+  
+  <!-- Internal -->
+  <rect x="330" y="70" width="200" height="250" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="430" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c"><b>SecureWallet (Internal)</b></text>
+  
+  <rect x="350" y="110" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="430" y="130" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">__balance = 1000</text>
+  
+  <rect x="350" y="150" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="430" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">__pin_hash = sha256(...)</text>
+  
+  <rect x="350" y="190" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="430" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">__transaction_history = []</text>
+  
+  <rect x="350" y="230" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="430" y="250" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">__failed_attempts = 0</text>
+  
+  <rect x="350" y="270" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="430" y="290" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">__locked = False</text>
+  
+  <rect x="350" y="310" width="160" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="430" y="330" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">__verify_pin(), __record_tx()</text>
+</svg>

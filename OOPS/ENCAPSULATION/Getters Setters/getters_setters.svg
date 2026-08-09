@@ -1,0 +1,48 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#388e3c"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#388e3c"><b>Getters & Setters</b></text>
+  
+  <!-- Traditional -->
+  <rect x="20" y="70" width="240" height="200" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#1976d2"><b>Traditional Methods</b></text>
+  
+  <rect x="40" y="110" width="200" height="35" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def get_name(self):</text>
+  <text x="140" y="150" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">    return self._name</text>
+  
+  <rect x="40" y="160" width="200" height="35" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="185" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def set_name(self, value):</text>
+  <text x="140" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">    if valid: self._name = value</text>
+  
+  <rect x="40" y="215" width="200" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="140" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Usage: obj.get_name()</text>
+  <text x="140" y="255" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">obj.set_name("new")</text>
+  
+  <!-- Property -->
+  <line x1="260" y1="175" x2="290" y2="175" stroke="#388e3c" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="290" y="70" width="240" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="410" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>@property (Pythonic)</b></text>
+  
+  <rect x="310" y="110" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">@property</text>
+  <text x="410" y="150" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def name(self): return self._name</text>
+  
+  <rect x="310" y="160" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="185" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">@name.setter</text>
+  <text x="410" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def name(self, v): validate; set</text>
+  
+  <rect x="310" y="215" width="200" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="410" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Usage: obj.name</text>
+  <text x="410" y="255" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">obj.name = "new"  # Same syntax!</text>
+  
+  <!-- Benefits -->
+  <rect x="20" y="290" width="510" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="275" y="310" text-anchor="middle" font-family="Arial" font-size="11" fill="#7b1fa2"><b>Benefits</b></text>
+  <text x="275" y="325" text-anchor="middle" font-family="Arial" font-size="10" fill="#7b1fa2">Validation • Computed values • Read-only • Caching • Backward compatibility</text>
+</svg>
