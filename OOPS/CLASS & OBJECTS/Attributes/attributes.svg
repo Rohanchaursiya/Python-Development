@@ -1,0 +1,43 @@
+<svg width="550" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f57c00"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#f57c00"><b>Instance vs Class Attributes</b></text>
+  
+  <!-- Class -->
+  <rect x="50" y="60" width="200" height="180" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="150" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#1976d2"><b>Class: Account</b></text>
+  
+  <rect x="70" y="100" width="160" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#f57c00">bank_name = "Python Bank"  ← CLASS</text>
+  
+  <rect x="70" y="140" width="160" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="150" y="160" text-anchor="middle" font-family="Arial" font-size="11" fill="#f57c00">interest_rate = 0.05  ← CLASS</text>
+  
+  <rect x="70" y="180" width="160" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="150" y="200" text-anchor="middle" font-family="Arial" font-size="11" fill="#f57c00">total_accounts = 0  ← CLASS</text>
+  
+  <!-- Instance 1 -->
+  <rect x="300" y="60" width="200" height="180" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c"><b>acc1 (Alice)</b></text>
+  
+  <rect x="320" y="100" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">owner = "Alice"  ← INSTANCE</text>
+  
+  <rect x="320" y="140" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">balance = 1000  ← INSTANCE</text>
+  
+  <rect x="320" y="180" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">bank_name → "Python Bank"  (shared)</text>
+  
+  <!-- Shared arrow -->
+  <line x1="150" y1="130" x2="400" y2="200" stroke="#f57c00" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="275" y="160" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Shared reference</text>
+  
+  <!-- Warning box -->
+  <rect x="50" y="260" width="450" height="30" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="275" y="280" text-anchor="middle" font-family="Arial" font-size="11" fill="#c2185b">⚠ Mutable class attributes (lists, dicts) are SHARED - use __init__ for instance-specific!</text>
+</svg>

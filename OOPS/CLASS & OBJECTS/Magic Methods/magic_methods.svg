@@ -1,0 +1,61 @@
+<svg width="550" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1976d2"><b>Magic Methods (Dunder Methods)</b></text>
+  
+  <text x="275" y="55" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">Enable Python's built-in syntax for custom classes</text>
+  
+  <!-- Categories -->
+  <rect x="20" y="70" width="160" height="300" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#1976d2"><b>Arithmetic</b></text>
+  <text x="100" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__add__      +</text>
+  <text x="100" y="135" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__sub__      -</text>
+  <text x="100" y="150" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__mul__      *</text>
+  <text x="100" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__truediv__  /</text>
+  <text x="100" y="180" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__neg__      -obj</text>
+  <text x="100" y="195" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__abs__      abs()</text>
+  <text x="100" y="210" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__pow__      **</text>
+  
+  <rect x="195" y="70" width="160" height="300" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="275" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#388e3c"><b>Comparison</b></text>
+  <text x="275" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__eq__       ==</text>
+  <text x="275" y="135" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__ne__       !=</text>
+  <text x="275" y="150" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__lt__       <</text>
+  <text x="275" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__le__       <=</text>
+  <text x="275" y="180" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__gt__       ></text>
+  <text x="275" y="195" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__ge__       >=</text>
+  
+  <rect x="370" y="70" width="160" height="300" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="5"/>
+  <text x="450" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#f57c00"><b>Container</b></text>
+  <text x="450" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__len__      len()</text>
+  <text x="450" y="135" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__getitem__  obj[]</text>
+  <text x="450" y="150" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__setitem__  obj[]=</text>
+  <text x="450" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__contains__ in</text>
+  <text x="450" y="180" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__iter__     for x in</text>
+  <text x="450" y="195" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__next__     next()</text>
+  
+  <!-- Second row -->
+  <rect x="20" y="290" width="160" height="100" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1" rx="5"/>
+  <text x="100" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#7b1fa2"><b>String/Bool</b></text>
+  <text x="100" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__str__      str()</text>
+  <text x="100" y="355" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__repr__     repr()</text>
+  <text x="100" y="370" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__bool__     bool()</text>
+  <text x="100" y="385" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__hash__     hash()</text>
+  
+  <rect x="195" y="290" width="160" height="100" fill="#fce4ec" stroke="#c2185b" stroke-width="1" rx="5"/>
+  <text x="275" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#c2185b"><b>Callable/Ctx</b></text>
+  <text x="275" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__call__     obj()</text>
+  <text x="275" y="355" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__enter__    with</text>
+  <text x="275" y="370" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__exit__     with</text>
+  
+  <rect x="370" y="290" width="160" height="100" fill="#e0f2f1" stroke="#00695c" stroke-width="1" rx="5"/>
+  <text x="450" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#00695c"><b>Attribute</b></text>
+  <text x="450" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__getattr__  missing attr</text>
+  <text x="450" y="355" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__setattr__  any attr set</text>
+  <text x="450" y="370" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__delattr__  del attr</text>
+  <text x="450" y="385" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">__dir__      dir()</text>
+</svg>
