@@ -1,0 +1,38 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b1fa2"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <!-- A -->
+  <rect x="215" y="20" width="120" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="275" y="50" text-anchor="middle" font-family="Arial" font-size="16" fill="#7b1fa2"><b>A</b></text>
+  
+  <!-- Arrows from A -->
+  <line x1="215" y1="70" x2="110" y2="110" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="335" y1="70" x2="440" y2="110" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- B and C -->
+  <rect x="50" y="120" width="120" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="110" y="150" text-anchor="middle" font-family="Arial" font-size="16" fill="#1976d2"><b>B</b></text>
+  
+  <rect x="380" y="120" width="120" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="440" y="150" text-anchor="middle" font-family="Arial" font-size="16" fill="#1976d2"><b>C</b></text>
+  
+  <!-- Arrows to D -->
+  <line x1="110" y1="170" x2="200" y2="220" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="440" y1="170" x2="350" y2="220" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <!-- D -->
+  <rect x="215" y="230" width="120" height="50" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="275" y="260" text-anchor="middle" font-family="Arial" font-size="16" fill="#388e3c"><b>D</b></text>
+  
+  <!-- Labels -->
+  <text x="110" y="100" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">single</text>
+  <text x="440" y="100" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">hierarchical</text>
+  <text x="275" y="210" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">multiple</text>
+</svg>

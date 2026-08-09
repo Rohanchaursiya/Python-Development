@@ -1,0 +1,52 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b1fa2"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#7b1fa2"><b>Method Types</b></text>
+  
+  <!-- Instance Method -->
+  <rect x="20" y="70" width="160" height="200" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#1976d2"><b>Instance Method</b></text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#1976d2">def method(self):</text>
+  <rect x="30" y="140" width="120" height="50" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="165" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Access: self.attr</text>
+  <text x="90" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Call: obj.method()</text>
+  <rect x="30" y="210" width="120" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="90" y="235" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ Modify instance state</text>
+  <text x="90" y="250" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ Access class attrs</text>
+  
+  <!-- Class Method -->
+  <rect x="195" y="70" width="160" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="275" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>Class Method</b></text>
+  <text x="275" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#388e3c">@classmethod</text>
+  <text x="275" y="135" text-anchor="middle" font-family="Arial" font-size="11" fill="#388e3c">def method(cls):</text>
+  <rect x="205" y="155" width="120" height="50" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="265" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Access: cls.attr</text>
+  <text x="265" y="195" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Call: Class.method()</text>
+  <text x="265" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">or obj.method()</text>
+  <rect x="205" y="220" width="120" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="265" y="245" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ Factory methods</text>
+  <text x="265" y="260" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ Class-level ops</text>
+  <text x="265" y="275" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✗ No instance access</text>
+  
+  <!-- Static Method -->
+  <rect x="370" y="70" width="160" height="200" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="450" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#7b1fa2"><b>Static Method</b></text>
+  <text x="450" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#7b1fa2">@staticmethod</text>
+  <text x="450" y="135" text-anchor="middle" font-family="Arial" font-size="11" fill="#7b1fa2">def method():</text>
+  <rect x="380" y="155" width="120" height="50" fill="#fff" stroke="#7b1fa2" stroke-width="1" rx="3"/>
+  <text x="440" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">No self/cls</text>
+  <text x="440" y="195" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Call: Class.method()</text>
+  <text x="440" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">or obj.method()</text>
+  <rect x="380" y="220" width="120" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="440" y="245" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ Utilities/helpers</text>
+  <text x="440" y="260" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✓ No state needed</text>
+  <text x="440" y="275" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">✗ No class/instance access</text>
+  
+  <!-- Arrow between -->
+  <line x1="180" y1="170" x2="195" y2="170" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="355" y1="170" x2="370" y2="170" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

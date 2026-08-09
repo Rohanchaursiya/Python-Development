@@ -1,0 +1,38 @@
+<svg width="550" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#388e3c"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#388e3c"><b>Interfaces (Protocols)</b></text>
+  
+  <!-- Protocol -->
+  <rect x="20" y="70" width="220" height="150" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5" stroke-dasharray="5,5"/>
+  <text x="130" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c"><b>Protocol: Drawable</b></text>
+  <text x="130" y="120" text-anchor="middle" font-family="monospace" font-size="11" fill="#388e3c">draw() → None</text>
+  <text x="130" y="140" text-anchor="middle" font-family="monospace" font-size="11" fill="#388e3c">area() → float</text>
+  
+  <rect x="20" y="230" width="220" height="50" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5" stroke-dasharray="5,5"/>
+  <text x="130" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c"><b>Protocol: Serializable</b></text>
+  <text x="130" y="270" text-anchor="middle" font-family="monospace" font-size="11" fill="#388e3c">to_json() → str</text>
+  
+  <!-- Implementation -->
+  <rect x="280" y="70" width="250" height="210" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="405" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#1976d2"><b>class Circle</b></text>
+  <text x="405" y="120" text-anchor="middle" font-family="monospace" font-size="11" fill="#333">def draw(): print(...)</text>
+  <text x="405" y="140" text-anchor="middle" font-family="monospace" font-size="11" fill="#333">def area(): return π*r²</text>
+  <text x="405" y="170" text-anchor="middle" font-family="monospace" font-size="11" fill="#333">def to_json(): return {...}</text>
+  <text x="405" y="190" text-anchor="middle" font-family="monospace" font-size="11" fill="#333">def from_json(): ...</text>
+  
+  <!-- Checkmarks -->
+  <text x="260" y="120" text-anchor="middle" font-family="Arial" font-size="20" fill="#388e3c">✓</text>
+  <text x="260" y="140" text-anchor="middle" font-family="Arial" font-size="20" fill="#388e3c">✓</text>
+  <text x="540" y="170" text-anchor="middle" font-family="Arial" font-size="20" fill="#388e3c">✓</text>
+  <text x="540" y="190" text-anchor="middle" font-family="Arial" font-size="20" fill="#388e3c">✓</text>
+  
+  <!-- Usage -->
+  <rect x="280" y="300" width="250" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="405" y="325" text-anchor="middle" font-family="Arial" font-size="11" fill="#f57c00">No inheritance needed - structural subtyping</text>
+  <text x="405" y="340" text-anchor="middle" font-family="Arial" font-size="11" fill="#f57c00">isinstance(circle, Drawable) → True</text>
+</svg>
