@@ -1,0 +1,53 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f57c00"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#f57c00"><b>Properties & Descriptors</b></text>
+  
+  <!-- Property -->
+  <rect x="20" y="70" width="240" height="200" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#1976d2"><b>@property</b></text>
+  
+  <rect x="40" y="110" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="130" text-anchor="middle" font-family="Arial" font-size="11" fill="#1976d2">@property</text>
+  <text x="140" y="142" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def name(self): return self._name</text>
+  
+  <rect x="40" y="150" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial" font-size="11" fill="#1976d2">@name.setter</text>
+  <text x="140" y="182" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def name(self, val): self._name = val</text>
+  
+  <rect x="40" y="190" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="210" text-anchor="middle" font-family="Arial" font-size="11" fill="#1976d2">@name.deleter</text>
+  <text x="140" y="222" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def name(self): del self._name</text>
+  
+  <rect x="40" y="235" width="200" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="140" y="255" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Usage: obj.name = "value" (not obj.name())</text>
+  
+  <!-- Descriptor -->
+  <rect x="290" y="70" width="240" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="410" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c"><b>Descriptor Protocol</b></text>
+  
+  <rect x="310" y="110" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="130" text-anchor="middle" font-family="Arial" font-size="11" fill="#388e3c">class Descriptor:</text>
+  
+  <rect x="310" y="150" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def __get__(self, obj, cls): ...</text>
+  
+  <rect x="310" y="190" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def __set__(self, obj, val): ...</text>
+  
+  <rect x="310" y="230" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="250" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def __delete__(self, obj): ...</text>
+  
+  <rect x="310" y="270" width="200" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="410" y="290" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Reusable across classes</text>
+  
+  <!-- Use cases -->
+  <rect x="20" y="290" width="510" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="275" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#7b1fa2"><b>Use Cases</b></text>
+  <text x="275" y="330" text-anchor="middle" font-family="Arial" font-size="10" fill="#7b1fa2">Properties: Validation, computed attrs, read-only, caching, backward compatibility</text>
+  <text x="275" y="345" text-anchor="middle" font-family="Arial" font-size="10" fill="#7b1fa2">Descriptors: ORM fields, type enforcement, lazy loading, shared validation logic</text>
+</svg>
