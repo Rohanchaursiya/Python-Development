@@ -1,0 +1,39 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b1fa2"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#7b1fa2"><b>Concrete Implementation</b></text>
+  
+  <rect x="20" y="70" width="200" height="100" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5" stroke-dasharray="5,5"/>
+  <text x="120" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#7b1fa2"><b>PaymentProcessor (ABC)</b></text>
+  <text x="120" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#7b1fa2">charge(amount, currency)</text>
+  <text x="120" y="140" text-anchor="middle" font-family="monospace" font-size="10" fill="#7b1fa2">refund(transaction_id)</text>
+  <text x="120" y="160" text-anchor="middle" font-family="monospace" font-size="10" fill="#7b1fa2">supported_currencies</text>
+  
+  <line x1="120" y1="170" x2="120" y2="200" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="120" x2="300" y2="120" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="150" x2="300" y2="220" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Stripe -->
+  <rect x="280" y="70" width="130" height="130" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="345" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#388e3c"><b>StripeProcessor</b></text>
+  <text x="345" y="120" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">charge() → Stripe API</text>
+  <text x="345" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">refund() → Stripe refund</text>
+  <text x="345" y="160" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">currencies: USD,EUR...</text>
+  
+  <!-- PayPal -->
+  <rect x="420" y="70" width="130" height="130" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="485" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#1976d2"><b>PayPalProcessor</b></text>
+  <text x="485" y="120" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">charge() → PayPal API</text>
+  <text x="485" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">refund() → PayPal refund</text>
+  <text x="485" y="160" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">currencies: USD,EUR...</text>
+  
+  <!-- Factory -->
+  <rect x="20" y="210" width="510" height="120" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="275" y="235" text-anchor="middle" font-family="Arial" font-size="13" fill="#f57c00"><b>PaymentFactory.create_processor("stripe") → StripeProcessor</b></text>
+  <text x="275" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">process_payment(processor, 99.99, "USD")  # Works with ANY implementation</text>
+  <text x="275" y="280" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">Complete interchangeability through abstraction</text>
+</svg>

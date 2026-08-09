@@ -1,0 +1,46 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1976d2"><b>Access Modifiers</b></text>
+  
+  <rect x="20" y="70" width="510" height="250" fill="#fafafa" stroke="#ddd" stroke-width="1" rx="5"/>
+  
+  <!-- Public -->
+  <rect x="40" y="90" width="150" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="115" y="115" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>PUBLIC</b></text>
+  <text x="115" y="135" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">owner</text>
+  <text x="115" y="155" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">account_type</text>
+  <text x="115" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">deposit()</text>
+  <text x="115" y="205" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">withdraw()</text>
+  <text x="115" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">get_balance()</text>
+  <rect x="50" y="260" width="130" height="30" fill="#c8e6c9" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="115" y="280" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">✓ External access OK</text>
+  
+  <!-- Protected -->
+  <rect x="200" y="90" width="150" height="200" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="275" y="115" text-anchor="middle" font-family="Arial" font-size="13" fill="#f57c00"><b>PROTECTED (_)</b></text>
+  <text x="275" y="135" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">_balance</text>
+  <text x="275" y="155" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">_transaction_log</text>
+  <text x="275" y="175" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">_interest_rate</text>
+  <text x="275" y="195" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">_log_transaction()</text>
+  <text x="275" y="215" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">_generate_token()</text>
+  <rect x="210" y="260" width="130" height="30" fill="#ffe0b2" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="275" y="280" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">⚠ Internal/Subclass</text>
+  
+  <!-- Private -->
+  <rect x="360" y="90" width="150" height="200" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="435" y="115" text-anchor="middle" font-family="Arial" font-size="13" fill="#c2185b"><b>PRIVATE (__)</b></text>
+  <text x="435" y="135" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__pin</text>
+  <text x="435" y="155" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__security_token</text>
+  <text x="435" y="175" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__verify_pin()</text>
+  <rect x="370" y="260" width="130" height="30" fill="#ffcdd2" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="435" y="280" text-anchor="middle" font-family="Arial" font-size="10" fill="#c2185b">🔒 Name mangled</text>
+  
+  <!-- Mangling example -->
+  <rect x="40" y="310" width="470" height="30" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="275" y="330" text-anchor="middle" font-family="Arial" font-size="11" fill="#7b1fa2">obj._BankAccount__pin  →  Accessible via mangled name (not truly private)</text>
+</svg>

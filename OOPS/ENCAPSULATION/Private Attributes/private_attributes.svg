@@ -1,0 +1,41 @@
+<svg width="550" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f57c00"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#f57c00"><b>Private Attributes (Name Mangling)</b></text>
+  
+  <rect x="20" y="70" width="240" height="180" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#1976d2"><b>BaseClass</b></text>
+  
+  <rect x="40" y="110" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="130" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__private = "base"</text>
+  
+  <rect x="40" y="150" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__private_method()</text>
+  
+  <rect x="40" y="190" width="200" height="40" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="140" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Mangled to:</text>
+  <text x="140" y="225" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">_BaseClass__private</text>
+  
+  <line x1="260" y1="160" x2="290" y2="160" stroke="#f57c00" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="290" y="70" width="240" height="180" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="410" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#c2185b"><b>SubClass</b></text>
+  
+  <rect x="310" y="110" width="200" height="30" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="410" y="130" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__private = "sub"</text>
+  
+  <rect x="310" y="150" width="200" height="30" fill="#fff" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="410" y="170" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">__private_method()</text>
+  
+  <rect x="310" y="190" width="200" height="40" fill="#fff3e0" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="410" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Mangled to:</text>
+  <text x="410" y="225" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">_SubClass__private</text>
+  
+  <!-- Key point -->
+  <rect x="20" y="270" width="510" height="30" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="275" y="290" text-anchor="middle" font-family="Arial" font-size="11" fill="#388e3c">✓ Different mangled names = No collision!  obj._BaseClass__private vs obj._SubClass__private</text>
+</svg>

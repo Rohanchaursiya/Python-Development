@@ -1,0 +1,47 @@
+<svg width="550" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b1fa2"/>
+    </marker>
+  </defs>
+  
+  <text x="275" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#7b1fa2"><b>Property Decorators</b></text>
+  
+  <rect x="20" y="70" width="240" height="220" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#1976d2"><b>Rectangle</b></text>
+  
+  <rect x="40" y="110" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="130" text-anchor="middle" font-family="Arial" font-size="10" fill="#1976d2">@property</text>
+  <text x="140" y="145" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def width(self): return self._width</text>
+  
+  <rect x="40" y="155" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="175" text-anchor="middle" font-family="Arial" font-size="10" fill="#1976d2">@width.setter</text>
+  <text x="140" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def width(self, v): validate; set</text>
+  
+  <rect x="40" y="200" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="220" text-anchor="middle" font-family="Arial" font-size="10" fill="#1976d2">@property (read-only)</text>
+  <text x="140" y="235" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def area(self): return w*h</text>
+  
+  <rect x="40" y="250" width="200" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="140" y="270" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">def perimeter(self): 2*(w+h)</text>
+  
+  <line x1="260" y1="170" x2="290" y2="170" stroke="#7b1fa2" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="290" y="70" width="240" height="220" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="410" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>Usage</b></text>
+  
+  <rect x="310" y="110" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">r = Rectangle(10, 5)</text>
+  
+  <rect x="310" y="155" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">r.width  # 10 (getter)</text>
+  
+  <rect x="310" y="200" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="225" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">r.width = 7  # setter + validate</text>
+  
+  <rect x="310" y="245" width="200" height="35" fill="#fff" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="410" y="270" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">r.area  # 35 (computed)</text>
+  
+  <rect x="310" y="290" width="200" height="35" fill="#ffcdd2" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="410" y="315" text-anchor="middle" font-family="Arial" font-size="10" fill="#c2185b">r.width = -3  # ValueError!</text>
+</svg>

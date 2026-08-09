@@ -1,0 +1,38 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <text x="250" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1976d2"><b>Abstract Base Classes</b></text>
+  
+  <rect x="50" y="70" width="200" height="180" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="150" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="#1976d2"><b>Animal (ABC)</b></text>
+  
+  <rect x="70" y="110" width="160" height="30" fill="#ffcdd2" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="11" fill="#c2185b">@abstractmethod speak()</text>
+  
+  <rect x="70" y="150" width="160" height="30" fill="#ffcdd2" stroke="#c2185b" stroke-width="1" rx="3"/>
+  <text x="150" y="170" text-anchor="middle" font-family="Arial" font-size="11" fill="#c2185b">@abstractmethod move()</text>
+  
+  <rect x="70" y="190" width="160" height="30" fill="#c8e6c9" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="150" y="210" text-anchor="middle" font-family="Arial" font-size="11" fill="#388e3c">breathe() → "Breathing..."</text>
+  
+  <line x1="150" y1="250" x2="150" y2="280" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="20" y="280" width="120" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="80" y="305" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>Dog</b></text>
+  <text x="80" y="325" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">speak() → "Woof!"</text>
+  <text x="80" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">move() → "Running"</text>
+  
+  <rect x="170" y="280" width="120" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="230" y="305" text-anchor="middle" font-family="Arial" font-size="13" fill="#388e3c"><b>Cat</b></text>
+  <text x="230" y="325" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">speak() → "Meow!"</text>
+  <text x="230" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">move() → "Walking"</text>
+  
+  <rect x="320" y="280" width="120" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="380" y="305" text-anchor="middle" font-family="Arial" font-size="13" fill="#f57c00"><b>Animal()</b></text>
+  <text x="380" y="325" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">TypeError!</text>
+  <text x="380" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">Can't instantiate</text>
+</svg>
